@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud">
+
+
+    <ImageView
+        android:id="@+id/icon_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:contentDescription="@string/back_to_funcionalidades"
+        android:src="@drawable/ic_icone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTituloBuscarClinicas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buscar_clinicas"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etLocalizacao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/inserir_localizacao"
+        android:background="@drawable/edit_text_background"
+        android:textColor="#000000"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloBuscarClinicas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/btBuscar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/buscar"
+        android:backgroundTint="@color/primaryColor"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/etLocalizacao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.7"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/primeirotexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:padding="8dp"
+        android:text="@string/cl_nica_sorriso_feliz_rua_das_flores_123"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/btBuscar"
+        tools:layout_editor_absoluteX="-16dp"
+        android:background="@drawable/text_background"/>
+
+    <TextView
+        android:id="@+id/segundotexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:padding="8dp"
+        android:text="@string/cl_nica_odontocare_av_central_456"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/primeirotexto"
+        tools:layout_editor_absoluteX="93dp"
+        android:background="@drawable/text_background"/>
+
+    <TextView
+        android:id="@+id/terceirotexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/cl_nica_sa_de_dental_rua_da_esperan_a_789"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/segundotexto"
+        tools:layout_editor_absoluteX="-16dp"
+        android:background="@drawable/text_background"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

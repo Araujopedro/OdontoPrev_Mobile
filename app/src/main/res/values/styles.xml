@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="containercomponents">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">250dp</item>
+        <item name="android:background">@drawable/containercomponents</item>
+        <item name="android:layout_margin">20dp</item>
+    </style>
+
+    <style name="edit_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:maxLength">25</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:background">@drawable/button</item>
+    </style>
+
+    <style name="CalendarDateText" parent="android:TextAppearance">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="CalendarWeekDayText" parent="android:TextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#BBBBBB</item>
+    </style>
+
+    <style name="CustomCalendarView" parent="android:Widget.CalendarView">
+        <item name="android:weekDayTextAppearance">@style/CalendarWeekDayText</item>
+        <item name="android:dateTextAppearance">@style/CalendarDateText</item>
+        <item name="android:focusedMonthDateColor">@color/primaryColor</item>
+        <item name="android:unfocusedMonthDateColor">@color/secondaryColor</item>
+        <item name="android:selectedDateVerticalBar">@color/primaryColor</item>
+        <item name="android:weekSeparatorLineColor">#FFFFFF</item>
+        <item name="android:calendarViewShown">true</item>
+        <item name="android:showWeekNumber">false</item>
+        <item name="android:background">#001F3F</item>
+    </style>
+
+
+</resources>

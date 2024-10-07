@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud">
+
+
+    <ImageView
+        android:id="@+id/icon_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:contentDescription="@string/back_to_funcionalidades"
+        android:src="@drawable/ic_icone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvTituloAgendamentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/agendamentos"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:dateTextAppearance="@style/CalendarDateText"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloAgendamentos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <TextView
+        android:id="@+id/tvInstrucao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selecione_uma_data_dispon_vel"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+        app:layout_constraintTop_toBottomOf="@id/calendarView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btConfirmarAgendamento"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/confirmar_agendamento"
+        android:backgroundTint="@color/primaryColor"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvInstrucao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.7"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btCancelar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cancelar"
+        android:backgroundTint="@color/secondaryColor"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/btConfirmarAgendamento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.7"
+        />
+    </androidx.constraintlayout.widget.ConstraintLayout>

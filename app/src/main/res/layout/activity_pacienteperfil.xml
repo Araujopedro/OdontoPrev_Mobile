@@ -1,0 +1,92 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud">
+
+
+    <ImageView
+        android:id="@+id/icon_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:contentDescription="@string/back_to_funcionalidades"
+        android:src="@drawable/ic_icone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPerfilPaciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="16dp"
+        android:text="Perfil do Paciente"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPontos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pontos: 0"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPerfilPaciente" />
+
+    <CheckBox
+        android:id="@+id/checkboxEscovouCafe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escovou os dentes após o café da manhã"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPontos" />
+
+    <CheckBox
+        android:id="@+id/checkboxEscovouAlmoco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escovou os dentes após o almoço"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkboxEscovouCafe" />
+
+    <CheckBox
+        android:id="@+id/checkboxEscovouJantar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escovou os dentes após o jantar"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkboxEscovouAlmoco" />
+
+    <CheckBox
+        android:id="@+id/checkboxMarcouAvaliacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marcou uma avaliação dental"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkboxEscovouJantar" />
+
+    <CheckBox
+        android:id="@+id/checkboxRealizouLimpeza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Realizou limpeza dental"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkboxMarcouAvaliacao" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

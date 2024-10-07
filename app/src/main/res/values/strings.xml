@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">OdontoCare</string>
+    <string name="entrar">Entrar</string>
+    <string name="text_cadastro">""Ainda não tem cadastro? Faça agora mesmo!"\n</string>
+    <string name="Perfil">Perfil do Paciente</string>
+    <string name="buscar_na_area">Buscar na Área</string>
+    <string name="alertas">Alertas</string>
+    <string name="alertasimg">Alertas</string>
+    <string name="agendamentos">Agendamentos</string>
+    <string name="selecione_uma_data_dispon_vel">Selecione uma data disponível</string>
+    <string name="confirmar_agendamento">Confirmar Agendamento</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="back_to_funcionalidades">voltar para funcionalidaes\n</string>
+    <string name="buscar_clinicas">Buscar\n</string>
+    <string name="inserir_localizacao">Inserir_localização</string>
+    <string name="buscar">Buscar</string>
+    <string name="cl_nica_sorriso_feliz_rua_das_flores_123">Clínica Sorriso Feliz - Rua das Flores, 123</string>
+    <string name="cl_nica_odontocare_av_central_456">Clínica OdontoCare - Av. Central, 456</string>
+    <string name="cl_nica_sa_de_dental_rua_da_esperan_a_789">Clínica Saúde Dental - Rua da Esperança, 789</string>
+    <string name="consulta_agendada_para_amanh_s_10_00">Consulta agendada para amanhã às 10:00</string>
+    <string name="lembrete_para_manter_os_dentes_saudaveis_importante_fazer_uma_limpeza_a_cada_6meses">Lembrete: Para manter os dentes saudaveis, importante fazer uma limpeza a cada 6 meses</string>
+    <string name="a_sua_consulta_foi_confirmada_com_o_dr_silva">A sua consulta foi confirmada com o Dr. Silva</string>
+</resources>

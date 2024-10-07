@@ -1,0 +1,147 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud">
+
+    <TextView
+        android:id="@+id/tvOlaBeatriz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Olá, Beatriz"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCarteirinha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Carteirinha: 1234567890"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="OdontoCare"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvOlaBeatriz" />
+
+    <ImageView
+        android:id="@+id/imgPerfilPaciente"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Perfil do Paciente"
+        android:src="@drawable/ic_dente"
+        app:layout_constraintEnd_toStartOf="@id/imgAgendamentos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <TextView
+        android:id="@+id/tvPerfilPaciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Perfil do Paciente"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/imgPerfilPaciente"
+        app:layout_constraintStart_toStartOf="@id/imgPerfilPaciente"
+        app:layout_constraintTop_toBottomOf="@id/imgPerfilPaciente" />
+
+    <ImageView
+        android:id="@+id/imgAgendamentos"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_margin="16dp"
+        android:contentDescription="Agendamentos"
+        android:src="@drawable/ic_calendario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgPerfilPaciente"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <TextView
+        android:id="@+id/tvAgendamentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Agendamentos"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/imgAgendamentos"
+        app:layout_constraintStart_toStartOf="@id/imgAgendamentos"
+        app:layout_constraintTop_toBottomOf="@id/imgAgendamentos" />
+
+    <ImageView
+        android:id="@+id/imgAlertas"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:contentDescription="@string/alertasimg"
+        android:src="@drawable/ic_alertas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgPerfilPaciente"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <TextView
+        android:id="@+id/tvAlertas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alertas"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/imgAlertas"
+        app:layout_constraintStart_toStartOf="@id/imgAlertas"
+        app:layout_constraintEnd_toEndOf="@id/imgAlertas"
+        android:layout_marginTop="8dp" />
+
+    <ImageView
+        android:id="@+id/imgBuscarNaArea"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        android:contentDescription="@string/buscar_na_area"
+        android:src="@drawable/ic_localizacao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.676"
+        app:layout_constraintStart_toEndOf="@id/imgAlertas"
+        app:layout_constraintTop_toBottomOf="@id/imgAgendamentos"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <TextView
+        android:id="@+id/tvBuscarNaArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar na Sua Área"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/imgBuscarNaArea"
+        app:layout_constraintStart_toStartOf="@id/imgBuscarNaArea"
+        app:layout_constraintEnd_toEndOf="@id/imgBuscarNaArea"
+        android:layout_marginTop="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
