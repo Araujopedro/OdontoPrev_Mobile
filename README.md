@@ -34,3 +34,6 @@ Agendamentos: Exibe e permite marcar consultas odontológicas.
 Perfil: Mostra detalhes do paciente e o sistema de pontos.
 
 Notificações: Alertas e lembretes de consultas.
+
+## **Diagrama demonstrando a integração/comunicação do aplicativo**
+![Diagrama](https://github.com/bia98silva/OdontoPrev_Mobile/blob/master/IMG/Diagrama.png)
