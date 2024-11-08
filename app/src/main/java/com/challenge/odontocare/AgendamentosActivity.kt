@@ -11,7 +11,7 @@ class AgendamentosActivity : AppCompatActivity() {
     private lateinit var calendarView: CalendarView
     private lateinit var btConfirmarAgendamento: Button
     private lateinit var btCancelar: Button
-    private lateinit var iconBack: ImageView
+    private lateinit var iconBack:Button
 
     private var selectedDate: String = ""
 
@@ -22,7 +22,7 @@ class AgendamentosActivity : AppCompatActivity() {
         calendarView = findViewById(R.id.calendarView)
         btConfirmarAgendamento = findViewById(R.id.btConfirmarAgendamento)
         btCancelar = findViewById(R.id.btCancelar)
-        iconBack = findViewById(R.id.icon_back)
+        iconBack = findViewById(R.id.buttonBack)
 
         calendarView.setOnDateChangeListener { _, year, month, dayOfMonth ->
             selectedDate = "$dayOfMonth/${month + 1}/$year"
