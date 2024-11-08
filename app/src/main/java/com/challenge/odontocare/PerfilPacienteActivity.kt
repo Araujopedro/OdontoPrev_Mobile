@@ -1,7 +1,7 @@
 package com.challenge.odontocare
 
 import android.os.Bundle
-import android.widget.ImageView
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
 class PerfilPacienteActivity : AppCompatActivity() {
@@ -10,8 +10,7 @@ class PerfilPacienteActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pacienteperfil)
 
-        val backIcon = findViewById<ImageView>(R.id.icon_back) //
-
+        val backIcon = findViewById<Button>(R.id.buttonBack) //
         backIcon.setOnClickListener {
             finish() //
         }
