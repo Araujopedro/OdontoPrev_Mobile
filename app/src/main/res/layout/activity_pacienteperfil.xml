@@ -6,15 +6,16 @@
     android:background="@drawable/backgroud">
 
 
-    <ImageView
-        android:id="@+id/icon_back"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_margin="5dp"
-        android:contentDescription="@string/back_to_funcionalidades"
-        android:src="@drawable/ic_icone"
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue_dark"
+        android:text="Voltar"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginStart="9dp" />
 
     <TextView
         android:id="@+id/tvPerfilPaciente"
