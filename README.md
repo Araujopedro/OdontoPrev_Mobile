@@ -61,6 +61,7 @@ Layout: ConstraintLayout
 Banco de Dados: (a ser adicionado em futuras implementações)
 Controle de Versão: Git, GitHub
 
+## **Versão do prototipo Figma: https://www.figma.com/design/3HaTKU1Igz2mImtEcHLMFt/Untitled?node-id=0-1&t=MD64P40u8zpe74om-1
 
 ## **Diagrama demonstrando a integração/comunicação do aplicativo**
 ![Diagrama](https://github.com/bia98silva/OdontoPrev_Mobile/blob/master/IMG/Diagrama.png)
